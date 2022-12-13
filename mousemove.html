@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mouse movement</title>
+</head>
+<style>
+	#div2{
+		background: red;
+		height: 200px;
+		width: 300px;
+	}
+	</style>
+<body>
+	<div id="div2">
+		para2
+	</div>
+	<script>
+		document.getElementById("div2").addEventListener("mousemove",sample);
+		function sample(event)
+		{
+			console.log("mousemove"+new Date().getTime());
+			console.log(event.pageX+","+event.pageY);
+		}
+	</script>
+
+</body>
+</html>
