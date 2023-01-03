@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+   body{
+      background: black;
+   }
+	form{
+		border: 1px solid black;
+		box-shadow: 2px 3px 4px 5px grey;
+		width: 40%;
+		margin: auto;
+		margin-top: 25px;
+		border-top: 5px solid green;
+		background: white;
+		height: 100%;
+
+	}
+	h1{
+		background: grey;
+		font-weight: bold;
+		color: white;
+		padding: 20px;
+
+	}
+	input{
+          margin-bottom: 10px;
+          margin-top: 5px;
+         margin-left: 10px;
+         height: 25px;
+         width: 500px;
+        border: 1px solid lightblue;
+
+
+         
+      }
+      input:hover{
+      	background: whitesmoke;
+      }
+      
+    p {
+
+      margin-left: 10px;
+      font-size: 17px;
+      font-weight: bold;
+
+      
+      }
+      .btn2{
+      	
+         background: lightgrey;
+        padding-top: 15px;
+      }
+      .btn1{
+      	
+        background: lightgrey;
+       
+      }
+
+      .btn2 button{
+      	font-size: 20px;
+      	font-weight: bold;
+      	background:darkcyan ;
+      	color: white ;
+      	height: 40px;
+      	width: 120px;
+      	
+      	float: left;
+      	margin-left: 15%;
+      	margin-bottom: 10px;
+      	transition: background 0.3s,font-size 0.3s;
+      	border-radius: 10px;
+      	cursor: pointer;
+
+      	
+      }
+      .btn2 button:hover{
+      	background: red;
+      	font-size: 15px;
+      }
+      .btn1 button{ 
+      	font-size: 20px;
+      	font-weight: bold;
+      	background: red;
+      	color: white ;
+      	height: 40px;
+      	width: 120px;
+      	padding: 9px;
+      	margin-left: 5%;
+      	margin-bottom: 10px;
+      	transition: background 0.3s,font-size 0.3s;
+      	border-radius: 10px;
+      	cursor: pointer;
+      	top: 20px;
+      }
+
+      .btn1 button:hover{
+      	background: green;
+      	font-size: 15px;
+      }
+    .radio{
+    	float: right;
+    }
+
+      
+	</style>
+    
+<body>
+	<form action="https://postman-echo.com/get" method="get" target="_blank">
+		<div class="card">
+   <h1>sign up</h1>
+   <p><label for="email">
+   Email *:</label></p>
+   <input type="email" name="email" id="email" value="someemail@gmail.com" autocomplete="off" autofocus="autofocus" required="required">
+   <p><label for="Password">
+   Password:</label></p>
+    <input type="Password" name="email" id="Password" value="some Password" maxlength="">
+    <p><label for="email">
+    	<p><label for="city">
+   City:</label></p>
+   <input type="text" name="city" id=city list="cities" >
+   <datalist id="cities">
+   	<option value="delhi"></option>
+   	<option value="delhi"></option>
+   	<option value="delhi"></option>
+   	<option value="delhi"></option>
+   	<option value="delhi"></option>
+   </datalist>
+</div>
+<p><label for="Favorite color">
+   Favorite color:</label></p>
+   <input type="color" name="city" id=Favorite color >
+</div>
+<p><label for="email">
+    	<p><label for="date">
+   Date:</label></p>
+   <input type="date" name="city" id="date" >
+</div>
+
+      <fieldset>
+      	<legend>journey details</legend>
+    	<p><label for="Date & Time of journey">
+   Date & Time of journey:</label></p>
+   <input type="datetime-local" name="city" id="Date & Time of journey">
+</div>
+<p><label for="month of journey">
+   month of journey:</label></p>
+   <input type="month" id="month of journey">
+</div>
+<p><label for="week">
+   week of journey:</label></p>
+   <input type="week" id="week of journey">
+</div>
+</fieldset>
+<p><label for="profile picture">
+   profile picture:</label></p>
+   <input type="file" id= "profile picture" multiple="multiple">
+</div>
+<p><label for=" picture">
+   picture:</label></p>
+   <input type="url" id="picture">
+</div>
+<p><label for=" Amount">
+   Amount:</label></p>
+   <input type="number" id=Amount step="5">
+   <select>
+   	<option value="2"></option>
+   		<option value="2"></option>
+   			<option value="2"></option>
+   				<option value="2"></option>
+   					<option value="2"></option>
+   						<option value="2"></option>
+   </select>
+</div>
+<p><label for=" Range">
+   Range:</label></p>
+   <input type="Range"  min="5" max="45"id=Range>
+</div>
+<p><label for=" Amount">
+   Amount:</label></p>
+   <input type="search" id=Amount list="no">
+    <p><label for=" Amount">
+   
+</div>
+
+
+
+<label for=" country">
+   country:</label>
+   
+   <select id="country" name="country" style=width:450px height:40px>
+   
+   
+   	  <optgroup label="i">
+   		<option value="india">india</option>
+   		<option value="india">india</option>
+   		<option value="india">india</option>
+   		<option value="india">india</option></optgroup>
+   		<option value="usa">usa</option>
+   		<option value="india">india</option>
+   		<option value="india">india</option>
+   		<option value="india">india</option>
+   		</select>
+
+   	
+  </div> 
+
+
+  
+   
+   
+
+
+
+
+
+
+<div class="btn2">
+	<input type="hidden" name="usertype" value="customer">
+
+	<button type="submit">ok</button>
+</div>
+	<div class="btn1">
+	<button type="reset" value="disable" >reset</button>
+
+	
+	
+</div>
+</form>
+</body>
+</html>
